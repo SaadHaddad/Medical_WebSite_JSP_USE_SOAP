@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://WS.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WS.com/">
+
+<xs:element name="AfficherOperation" type="tns:AfficherOperation" />
+
+<xs:element name="AfficherOperationResponse" type="tns:AfficherOperationResponse" />
+
+<xs:element name="AjouterCompteRendu" type="tns:AjouterCompteRendu" />
+
+<xs:element name="AjouterCompteRenduResponse" type="tns:AjouterCompteRenduResponse" />
+
+<xs:complexType name="AfficherOperation">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="AfficherOperationResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:operation" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="operation">
+<xs:sequence>
+<xs:element name="adress" type="xs:string" minOccurs="0" />
+<xs:element name="billan" type="xs:string" minOccurs="0" />
+<xs:element name="cause_medecal" type="xs:string" minOccurs="0" />
+<xs:element name="compte_rendu" type="xs:string" minOccurs="0" />
+<xs:element name="dateOperation" type="xs:string" minOccurs="0" />
+<xs:element name="date_n" type="xs:string" minOccurs="0" />
+<xs:element name="etat_chu" type="xs:string" minOccurs="0" />
+<xs:element name="etat_med" type="xs:string" minOccurs="0" />
+<xs:element name="id_operation" type="xs:int" />
+<xs:element name="id_pat" type="xs:int" />
+<xs:element name="medecin_operation" type="xs:string" minOccurs="0" />
+<xs:element name="nom" type="xs:string" minOccurs="0" />
+<xs:element name="nom_medecin_prv" type="xs:string" minOccurs="0" />
+<xs:element name="prenom" type="xs:string" minOccurs="0" />
+<xs:element name="sex" type="xs:string" minOccurs="0" />
+<xs:element name="tel" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AjouterCompteRendu">
+<xs:sequence>
+<xs:element name="ID_ope" type="xs:int" />
+<xs:element name="Compt_rendu" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AjouterCompteRenduResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

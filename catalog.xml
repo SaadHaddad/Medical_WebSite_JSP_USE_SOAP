@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8085/WEB_SERVICES/Agent?wsdl" uri="src/conf/xml-resources/web-service-references/Agent/wsdl/localhost_8085/WEB_SERVICES/Agent.wsdl"/>
+    <system systemId="http://localhost:8085/WEB_SERVICES/Agent?xsd=1" uri="src/conf/xml-resources/web-service-references/Agent/wsdl/localhost_8085/WEB_SERVICES/Agent.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/WEB_SERVICES/test?wsdl" uri="src/conf/xml-resources/web-service-references/test/wsdl/localhost_8085/WEB_SERVICES/test.wsdl"/>
+    <system systemId="http://localhost:8085/WEB_SERVICES/test?xsd=1" uri="src/conf/xml-resources/web-service-references/test/wsdl/localhost_8085/WEB_SERVICES/test.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/WEB_SERVICES/Login?wsdl" uri="src/conf/xml-resources/web-service-references/Login/wsdl/localhost_8085/WEB_SERVICES/Login.wsdl"/>
+    <system systemId="http://localhost:8085/WEB_SERVICES/Login?xsd=1" uri="src/conf/xml-resources/web-service-references/Login/wsdl/localhost_8085/WEB_SERVICES/Login.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/WEB_SERVICES/LABO?wsdl" uri="src/conf/xml-resources/web-service-references/LABO/wsdl/localhost_8085/WEB_SERVICES/LABO.wsdl"/>
+    <system systemId="http://localhost:8085/WEB_SERVICES/LABO?xsd=1" uri="src/conf/xml-resources/web-service-references/LABO/wsdl/localhost_8085/WEB_SERVICES/LABO.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/WEB_SERVICES/Chirurgical?wsdl" uri="src/conf/xml-resources/web-service-references/Chirurgical/wsdl/localhost_8085/WEB_SERVICES/Chirurgical.wsdl"/>
+    <system systemId="http://localhost:8085/WEB_SERVICES/Chirurgical?xsd=1" uri="src/conf/xml-resources/web-service-references/Chirurgical/wsdl/localhost_8085/WEB_SERVICES/Chirurgical.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/WEB_SERVICES/Medical?wsdl" uri="src/conf/xml-resources/web-service-references/Medical/wsdl/localhost_8085/WEB_SERVICES/Medical.wsdl"/>
+    <system systemId="http://localhost:8085/WEB_SERVICES/Medical?xsd=1" uri="src/conf/xml-resources/web-service-references/Medical/wsdl/localhost_8085/WEB_SERVICES/Medical.xsd_1.xsd"/>
+</catalog>

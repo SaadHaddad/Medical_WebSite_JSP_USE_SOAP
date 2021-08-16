@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://WS.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WS.com/">
+
+<xs:element name="AjouterBillan" type="tns:AjouterBillan" />
+
+<xs:element name="AjouterBillanResponse" type="tns:AjouterBillanResponse" />
+
+<xs:element name="ListeBillan" type="tns:ListeBillan" />
+
+<xs:element name="ListeBillanResponse" type="tns:ListeBillanResponse" />
+
+<xs:element name="ListePatiens" type="tns:ListePatiens" />
+
+<xs:element name="ListePatiensResponse" type="tns:ListePatiensResponse" />
+
+<xs:complexType name="ListeBillan">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="ListeBillanResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:billan" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="billan">
+<xs:sequence>
+<xs:element name="adress" type="xs:string" minOccurs="0" />
+<xs:element name="billan" type="xs:string" minOccurs="0" />
+<xs:element name="date_n" type="xs:string" minOccurs="0" />
+<xs:element name="id_pat" type="xs:int" />
+<xs:element name="nom" type="xs:string" minOccurs="0" />
+<xs:element name="num_billan" type="xs:int" />
+<xs:element name="prenom" type="xs:string" minOccurs="0" />
+<xs:element name="sex" type="xs:string" minOccurs="0" />
+<xs:element name="tel" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AjouterBillan">
+<xs:sequence>
+<xs:element name="billan" type="xs:string" minOccurs="0" />
+<xs:element name="id_pa" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AjouterBillanResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListePatiens">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="ListePatiensResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:patients" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="patients">
+<xs:sequence>
+<xs:element name="adress" type="xs:string" minOccurs="0" />
+<xs:element name="date_n" type="xs:string" minOccurs="0" />
+<xs:element name="id_pat" type="xs:int" />
+<xs:element name="nom" type="xs:string" minOccurs="0" />
+<xs:element name="prenom" type="xs:string" minOccurs="0" />
+<xs:element name="sex" type="xs:string" minOccurs="0" />
+<xs:element name="tel" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
